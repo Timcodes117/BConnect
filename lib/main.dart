@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hack101/appearance/Darkmode.dart';
-import 'package:hack101/appearance/Lightmode.dart';
-import 'package:hack101/screens/Login.dart';
-import 'package:hack101/screens/Signup.dart';
-import 'package:hack101/screens/Welcome.dart';
+import 'package:bconnect/appearance/Darkmode.dart';
+import 'package:bconnect/appearance/Lightmode.dart';
+import 'package:bconnect/screens/Login.dart';
+import 'package:bconnect/screens/Signup.dart';
+import 'package:bconnect/screens/Welcome.dart';
 
 void main() {
   runApp(const MyApp());
