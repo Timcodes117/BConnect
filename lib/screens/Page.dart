@@ -32,7 +32,7 @@ class BusinessPage extends StatelessWidget {
             height: MediaQuery.of(context).size.height / 2,
             decoration: BoxDecoration(
               color: Colors.black,
-              image: DecorationImage(image: AssetImage("lib/assets/welcome.jpg"), fit: BoxFit.cover)
+              image: DecorationImage(image: AssetImage("lib/assets/hair3.jpg"), fit: BoxFit.cover)
             ),
             child: Container(
             width: double.infinity,
@@ -47,7 +47,7 @@ class BusinessPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                        "Business Name",
+                        "Beauty Salon",
                         style: TextStyle(
                             color: Colors.grey.shade100,
                             fontWeight: FontWeight.bold,

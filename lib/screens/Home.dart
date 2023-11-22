@@ -403,7 +403,7 @@ class BusinessView extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.grey.shade200,
               image: DecorationImage(
-                  image: AssetImage("lib/assets/welcome.jpg"),
+                  image: AssetImage("lib/assets/salon.jpg"),
                   fit: BoxFit.cover)),
           child: Container(
               width: MediaQuery.of(context).size.width,
@@ -418,7 +418,7 @@ class BusinessView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Business Name",
+                      "Beauty Salon",
                       style: TextStyle(
                           color: Colors.grey.shade100,
                           fontWeight: FontWeight.bold,
@@ -523,7 +523,7 @@ class ProducView extends StatelessWidget {
           color: Colors.grey.shade300,
           borderRadius: BorderRadius.circular(10),
           image: DecorationImage(
-              image: AssetImage("lib/assets/welcome.jpg"), fit: BoxFit.cover)),
+              image: AssetImage("lib/assets/hair1.jpg"), fit: BoxFit.cover)),
       child: Container(
         width: double.infinity,
         height: 200,
