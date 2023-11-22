@@ -133,27 +133,44 @@ class _SignupState extends State<Signup> {
                 Center(
                     child: Column(
                       children: [
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width - 50,
-                          height: 50,
-                          child: ElevatedButton(onPressed: () {
-                            setState(() {
-                              widget.accountType = "Business";
-                            });
-                          }, child: Text("Yes", style: TextStyle(color: widget.accountType == "Business" ? Colors.white : Colors.grey.shade900),), style: ElevatedButton.styleFrom(elevation: 0.0,  backgroundColor: widget.accountType == "Business" ? Color.fromARGB(255, 54, 3, 255)  : Colors.grey.shade100),),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Radio(
+                              autofocus: true,
+                value: "Business",
+                groupValue: widget.accountType,
+                activeColor: Color.fromARGB(255, 54, 3, 255) ,
+                onChanged: (value) {
+                  setState(() {
+                    widget.accountType = "Business";
+                  });
+                },
+              ),
+              Text('Yes'),
+                          ],
                         ),
                         Divider(
                           color: Colors.transparent,
                         ),
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width - 50,
-                          height: 50,
-                          child: ElevatedButton(onPressed: () {
-                            setState(() {
-                              widget.accountType = "Individual";
-                            });
-                          }, child: Text("No", style: TextStyle(color: widget.accountType == "Individual" ? Colors.white : Colors.grey.shade900),), style: ElevatedButton.styleFrom(elevation: 0.0, backgroundColor: widget.accountType == "Individual" ? Color.fromARGB(255, 54, 3, 255) : Colors.grey.shade100),),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Radio(
+                              autofocus: true,
+                value: "Individual",
+                groupValue: widget.accountType,
+                activeColor: Color.fromARGB(255, 54, 3, 255) ,
+                onChanged: (value) {
+                  setState(() {
+                    widget.accountType = "Individual";
+                  });
+                },
+              ),
+              Text('No'),
+                          ],
                         ),
+                       
                       ],
                     )
                 )
@@ -293,6 +310,7 @@ class InputFieldBordered extends StatelessWidget {
       height: 60,
       decoration: BoxDecoration(
           // border: Border.lerp(\),
+          border: Border(bottom: BorderSide.none),
           // border: ,
           color: Colors.transparent,
           borderRadius: BorderRadius.circular(10)),

@@ -78,7 +78,7 @@ class Welcome extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(20),
                               )),
                           onPressed: () {
-                            Navigator.pushNamed(context, '/login');
+                            Navigator.pushReplacementNamed(context, '/main');
                           },
                           child: Text(
                             "Get Started",

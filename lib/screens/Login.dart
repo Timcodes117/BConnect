@@ -24,13 +24,16 @@ class Login extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Image.asset("lib/assets/store.png", fit: BoxFit.contain, width: double.infinity, height: 300,),
-                    Text(
-                      "Business",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 54, 3, 255),
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold),
+                    Image.asset("lib/assets/21727022_6505894.jpg", fit: BoxFit.contain, width: MediaQuery.of(context).size.width - 50, height: 300,),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width - 50,
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 54, 3, 255),
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold),
+                      ),
                     )
                   ],
                 ),
@@ -71,7 +74,9 @@ class Login extends StatelessWidget {
                     width: 250,
                     height: 60,
                     child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/main');
+                        },
                         style: ElevatedButton.styleFrom(
                           elevation: 0.0,
                             backgroundColor: Color.fromARGB(255, 54, 3, 255),

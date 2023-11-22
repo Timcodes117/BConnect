@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "197886596249",
+    "project_id": "bconnectend",
+    "storage_bucket": "bconnectend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197886596249:android:eb06cd98a13f803fbc9408",
+        "android_client_info": {
+          "package_name": "com.example.bconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV0Od5quAa7R32ZwEQq7mNkEL62xTSRw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
